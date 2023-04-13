@@ -1,0 +1,44 @@
+<div class="card">
+  <div class="card-body">
+    <div class="form-check form-check-inline">
+      <input
+        [(ngModel)]="radioButtonSeleccionado"
+        (change)="rediChage()"
+        class="form-check-input"
+        type="radio"
+        name="sexo"
+        id="todos"
+        value="Todos"
+      />
+      <label class="form-check-label" for="todos">Todos ({{ todos }})</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input
+        [(ngModel)]="radioButtonSeleccionado"
+        (change)="rediChage()"
+        class="form-check-input"
+        type="radio"
+        name="sexo"
+        id="femenino"
+        value="Femenino"
+      />
+      <label class="form-check-label" for="femenino"
+        >Femenino ({{ femenino }})</label
+      >
+    </div>
+    <div class="form-check form-check-inline">
+      <input
+        [(ngModel)]="radioButtonSeleccionado"
+        (change)="rediChage()"
+        class="form-check-input"
+        type="radio"
+        name="sexo"
+        id="Masculino"
+        value="Masculino"
+      />
+      <label class="form-check-label" for="Masculino"
+        >Masculino ({{ masculino }})</label
+      >
+    </div>
+  </div>
+</div>
